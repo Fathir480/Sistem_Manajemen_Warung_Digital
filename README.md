@@ -58,4 +58,4 @@ Project ini dibuat untuk **melatih logika pemrograman**, khususnya penggunaan:
 
 ## Improve
 
-Membuat perhitungan subtotal berdasarkan pesanan bukan looping
+Membuat perhitungan total_harga berdasarkan pesanan. bukan dari penambahan item atau fitur lain
