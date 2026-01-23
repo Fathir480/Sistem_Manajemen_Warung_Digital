@@ -12,6 +12,8 @@ Project ini dibuat untuk **melatih logika pemrograman**, khususnya penggunaan:
 ---
 
 ## 📌 Fitur Utama
+- Menampilkan opsi sistem (tambah,lihat,hapus,checkout)
+- Sinkron fitur hapus ke pesanan dan stok menu
 - Menampilkan daftar menu dan harga
 - Pemesanan lebih dari satu item
 - Penyimpanan detail pesanan
@@ -33,15 +35,27 @@ Project ini dibuat untuk **melatih logika pemrograman**, khususnya penggunaan:
 ---
 
 ## Alur Program
-1. Program menampilkan menu
-2. User memilih menu dan jumlah
-3. Pesanan disimpan ke dalam list
-4. User dapat menambah pesanan
-5. Program menghitung:
+
+1. Program menampilkan menu utama
+2. User memilih opsi
+3. Jika tambah pesanan:
+   - User memilih menu
+   - User memasukkan jumlah
+   - Pesanan disimpan / diperbarui di list
+4. User dapat:
+   - Menambah pesanan
+   - Melihat pesanan
+   - Menghapus pesanan
+5. Saat checkout, program menghitung:
    - Subtotal
    - Diskon
    - Pajak
    - Total bayar
 6. Struk belanja ditampilkan
 
+
 ---
+
+## Improve
+
+Membuat perhitungan subtotal berdasarkan pesanan bukan looping
