@@ -7,7 +7,6 @@ menu = {
 }
 
 pilihan = 0
-total_harga = 0
 pesanan = []
 while True :
   print("1. Tambah Pesanan")
@@ -47,17 +46,14 @@ while True :
       total_item = harga*jumlah
       menu[nama][2] -= jumlah
 
-      ketemu = False
       for item in pesanan:
         if item[0] == nama:
           item[1] += jumlah
           item[2] += total_item
-          ketemu = True
           break
 
-      if not ketemu:
+      else:
         pesanan.append([nama,jumlah,total_item])
-      total_harga += total_item
       pesan_ulang = input('Tambah Pesanan (y/n): ').lower()
 
   elif pilihan == 2:
@@ -90,7 +86,6 @@ while True :
 
         harga_satuan = menu[hapus][1]
         harga_kurang = harga_satuan*berapa
-        total_harga -= harga_kurang
         menu[hapus][2] += berapa
 
         if item[1] == berapa:
@@ -111,7 +106,8 @@ while True :
   
   elif pilihan == 4:
     print()
-    subtotal = total_harga
+
+    subtotal = sum(item[2] for item in pesanan)
 
     diskon = 0
     if subtotal > 50000:
