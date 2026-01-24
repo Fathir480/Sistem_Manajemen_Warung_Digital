@@ -58,4 +58,4 @@ Project ini dibuat untuk **melatih logika pemrograman**, khususnya penggunaan:
 
 ## Improve
 
-Membuat perhitungan total_harga berdasarkan pesanan. bukan dari penambahan item atau fitur lain
+Membuat perhitungan total_harga berdasarkan pesanan. bukan dari penambahan item atau fitur lain (selesai)
